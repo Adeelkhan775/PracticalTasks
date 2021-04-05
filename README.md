@@ -1,5 +1,5 @@
 # PracticalTasks
-Instructions for running Scripts
-Open the solution in the Visual studio
-Then Open the TestScripts folder>Test_suit1.cs
-Run the test.
+Instructions for running Scripts.
+1:Open the solution in the Visual studio
+2:Then Open the TestScripts folder>Test_suit1.cs
+3:Run the test.
