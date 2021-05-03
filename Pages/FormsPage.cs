@@ -20,7 +20,6 @@ namespace Tasks.Pages
            
         }
         By PracticeFormBtn = By.XPath("//span[contains(text(),'Practice Form')]");
-       // By MainformBtn = By.XPath("//h5[contains(text(),'Forms')]");
         By MainformBtn = By.XPath("//div[@class='category-cards']//div[1]/div[.='Forms']");
         By AccorForm = By.XPath("//div[.='Forms']");
         By FirstNameTxt = By.Id("firstName");
@@ -53,15 +52,8 @@ namespace Tasks.Pages
             string message = driver.FindElement(SuccessMessage).Text;
             Assert.AreEqual("Thanks for submitting the form", message);
         }
-        //Click on Form button on Main page
-        public void click_MainFormsBtn()
-        {
-           // js = (IJavaScriptExecutor)driver;
-          //  js.ExecuteScript("arguments[0].scrollIntoView();", driver.FindElement(MainformBtn));
-           // driver.FindElement(MainformBtn).Click();
-
-        }
-        //Click on Form Accordian
+            
+       //Click on Form Accordian
         public void click_AccorFormBtn()
         {
             js = (IJavaScriptExecutor)driver;
@@ -77,12 +69,12 @@ namespace Tasks.Pages
         //Navigate to Forms Page
         public void Navigate()
         {
-            //Click on the Accordian of  Forms
             click_AccorFormBtn();
             click_PracticeForm();
             
         }
         public void pick_Date() {
+            
             driver.FindElement(Calender).Click();
             driver.FindElement(By.XPath("//div[@class='react-datepicker__day react-datepicker__day--005']")).Click();
         }
